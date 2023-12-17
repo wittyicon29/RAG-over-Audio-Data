@@ -41,6 +41,11 @@ git clone https://github.com/wittyicon29/RAG-over-Audio-Data.git
 cd RAG-over-Audio-Data
 ```
 
+**Create a virtual environment**
+```cd
+python -m venv venv
+```
+
 **Install the dependencies**
 ```cd
 pip install -r requirements.txt
