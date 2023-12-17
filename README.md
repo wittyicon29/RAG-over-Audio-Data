@@ -29,10 +29,44 @@ The embedded text chunks are stored in a vector database (Chroma) for efficient 
 5. **Question-Answering (QA) System**
 The code implements a QA system using an advanced version of the GPT-3 model (ChatOpenAI). It retrieves relevant information from the vector database based on user queries.
 
-## Usage 
+## Installation
 
 **Clone the repo**
 ```cd
-git clone 
+git clone https://github.com/wittyicon29/RAG-over-Audio-Data.git
+```
+
+**Switch to the directory**
+```cd
+cd RAG-over-Audio-Data
+```
+
+**Install the dependencies**
+```cd
+pip install -r requirements.txt
+```
+
+## Usage
+
+Set up your environment variables in a **.env** file.
 
 **Transcribing Files**: Provide remote audio file URLs in the URLs list. The provided URLs of the audio files must be publicily accessible so that AssemmbyAI API can access those audio files.
+
+**Run the script**
+```python
+python main.py
+```
+
+## Configuration
+
+Adjust the chunk size and overlap in RecursiveCharacterTextSplitter for text splitting customization.
+
+Modify model names and parameters in the make_embedder() and make_qa_chain() functions to experiment with different language models and settings.
+
+## References 
+
+[Retrieval Augumented Generation for Audio using Langchain](https://www.assemblyai.com/blog/retrieval-augmented-generation-audio-langchain)
+
+## LICENSE
+
+This project is licensed under the MIT License - see the LICENSE file for details
