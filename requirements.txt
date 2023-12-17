@@ -1,0 +1,6 @@
+assemblyai>=0.17.0
+openai>=0.28.0
+langchain>=0.0.278
+python-dotenv>=1.0.0
+sentence-transformers>=2.2.2
+chromadb>=0.4.8
